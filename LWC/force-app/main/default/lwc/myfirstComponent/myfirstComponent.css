@@ -1,0 +1,11 @@
+div{
+    color:blueviolet;
+    font-size: large;
+    background-color: rgb(248, 245, 245);
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(165, 126, 42);
+}

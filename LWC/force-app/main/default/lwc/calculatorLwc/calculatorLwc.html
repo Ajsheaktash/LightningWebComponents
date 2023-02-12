@@ -1,0 +1,17 @@
+<template>
+    <lightning-card>
+<lightning-input label="First Number" value="Enter First Number" onchange={fNumberHandler}></lightning-input>
+<lightning-input label="Second Number" value="Enter Second Number" onchange={sNumberHandler}></lightning-input>
+ <br/>
+<lightning-button label="Add" onclick={sumHandler} class="slds-m-left_x-small"></lightning-button>
+<lightning-button label="Subtract" onclick={subHandler} class="slds-m-left_x-small"></lightning-button>
+<lightning-button label="Multiply" onclick={mulHandler} class="slds-m-left_x-small"></lightning-button>
+<lightning-button label="Divide" onclick={divHandler} class="slds-m-left_x-small"></lightning-button>
+
+<div>{sum}</div> <br/>
+<div>{sub}</div> <br/>
+<div>{multi}</div> <br/>
+<div>{div}</div> <br/>
+    </lightning-card>
+
+</template>
