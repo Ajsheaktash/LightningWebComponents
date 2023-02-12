@@ -1,0 +1,30 @@
+<template>
+    <div>
+        <lightning-progress-bar size="medium" value={progress} variant="circular">
+
+        </lightning-progress-bar>
+<p style="font-size:16px; text-align:center">Simple LWC Quiz</p>
+<form>
+<p><i>1.What is 10% of 100? </i> </p>
+<input style="width: 400px" type="number" name="answer1" onchange={handlechange}/>
+<br/>
+<p><i> 2.What is 40+50? </i> </p>
+<input style="width: 400px" type="number" name="answer2" onchange={handlechange}/>
+<br/>
+<p><i> 3.What is 60/4? </i> </p>
+<input style="width: 400px" type="number" name="answer3" onchange={handlechange}/>
+<br/>
+<p><i> 4.What is 33*6? </i> </p>
+<input style="width: 400px" type="number" name="answer4" onchange={handlechange}/>
+<br/>
+<p><i> 5.What is 700-300? </i> </p>
+<input style="width: 400px" type="number" name="answer5" onchange={handlechange}/>
+
+</form>
+
+<div style="background:green; color:white;margin-top:auto"> Correct Answers: {correct}</div>
+<div style="background:rgb(119, 6, 6); color:white;margin-top:auto"> Incorrect Answers: {incorrect}</div>
+
+
+    </div>
+</template>
