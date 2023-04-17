@@ -1,0 +1,23 @@
+<!--
+  @description       : 
+  @author            : Ajshe Aktash
+  @group             : 
+  @last modified on  : 02-19-2023
+  @last modified by  : Ajshe Aktash
+-->
+<template>
+    <lightning-card>
+        <template if:true={accounts.data}>
+            <lightning-datatable
+                key-field="Id"
+                data={accounts.data}
+                columns={columns}
+            >
+           </lightning-datatable>
+
+        </template>
+        <template if:true={errors}>
+            <p>{errors}</p>
+        </template>
+    </lightning-card>
+</template>
