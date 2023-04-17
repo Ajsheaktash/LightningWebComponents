@@ -1,0 +1,19 @@
+<!--
+  @description       : 
+  @author            : Ajshe Aktash
+  @group             : 
+  @last modified on  : 02-18-2023
+  @last modified by  : Ajshe Aktash
+-->
+<template>
+    <lightning-card  title="FullName to UpperCase">
+       
+        <p class="slds-p-horizontal_small">
+            <lightning-input type="text" label="Enter your first name"  name="FirstName" onchange={ChangeHandler}></lightning-input>  
+            <lightning-input type="text" label="Enter your last name" name="LastName" onchange={ChangeHandler}></lightning-input>   
+
+            
+        </p>
+        <p slot="footer"> FullName: {FullName} </p>
+    </lightning-card>
+</template>

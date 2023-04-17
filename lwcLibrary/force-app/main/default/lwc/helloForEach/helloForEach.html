@@ -1,0 +1,22 @@
+<!--
+  @description       : 
+  @author            : Ajshe Aktash
+  @group             : 
+  @last modified on  : 02-27-2023
+  @last modified by  : Ajshe Aktash
+-->
+<template>
+    <lightning-card >
+        <div class="slds-box">
+        <ul>
+        <template for:each={contacts} for:item="contact">
+            <li key={contact.Id}>
+                {contact.Name} - {contact.Title}
+
+            </li>
+        </template>
+    </ul>
+</div>
+</lightning-card>
+
+</template>

@@ -1,0 +1,19 @@
+<!--
+  @description       : 
+  @author            : Ajshe Aktash
+  @group             : 
+  @last modified on  : 02-18-2023
+  @last modified by  : Ajshe Aktash
+-->
+<template>
+    <lightning-card  title="FullName">
+       
+        <p class="slds-p-horizontal_small">
+            <lightning-input type="text" label="Enter your first name" value={firstname} onchange={firstChangeHandler}></lightning-input>  
+            <lightning-input type="text" label="Enter your last name" value={lastname} onchange={lastChangeHandler}></lightning-input>   
+
+            <lightning-button label="FullName" slot="actions" onclick={getFullName}></lightning-button>
+        </p>
+        <p slot="footer">fullName: {fullname} </p>
+    </lightning-card>
+</template>

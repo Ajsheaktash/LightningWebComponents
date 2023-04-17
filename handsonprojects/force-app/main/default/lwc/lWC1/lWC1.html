@@ -1,0 +1,26 @@
+<!--
+  @description       : 
+  @author            : Ajshe Aktash
+  @group             : 
+  @last modified on  : 02-18-2023
+  @last modified by  : Ajshe Aktash
+-->
+<template>
+  <lightning-card title="LWC1" icon-name="custom:custom15">
+    <div class="slds-m-around_medium">
+     <lightning-input type="text" label="Enter a text" onchange={changeHandler} placeholder="Write a text"></lightning-input>   
+    </div>
+<div class="slds-m-around_medium">
+<br/>
+<h1> Hello {name} !</h1>
+
+    <lightning-button variant="destructive" label="Destructive" title="Destructive action" onclick={handleClick} class="slds-m-left_x-small">
+
+    </lightning-button>
+
+
+</div>
+
+
+  </lightning-card> 
+</template>
